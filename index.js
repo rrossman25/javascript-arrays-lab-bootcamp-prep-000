@@ -23,17 +23,21 @@ function destructivelyRemoveFirseKitten(){
 }
 
 function appendKitten(name){
-  
+  let newKitten = [...kittens, name];
+  return newKitten;
 }
 
 function prependKitten(name){
-  
+  let newKitten = [name, ...kittens];
+  return newKitten;
 }
 
 function removeLastKitten(){
-  
+  let newKitten = kittens.slice(0, kittens.length - 1);
+  return newKitten;
 }
 
 function removeFirstKitten(){
-  
+  let newKitten = kittens.slice(1);
+  return newKitten;
 }
